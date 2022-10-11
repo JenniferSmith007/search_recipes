@@ -28,3 +28,7 @@
 |  Git  |  Version control      |
 |  Github / Github Pages  | Store code and host a “production” version of the application |
 
+### ✒️  Documentation: 
+#### Design Thinking and Value proposition 
+
+
