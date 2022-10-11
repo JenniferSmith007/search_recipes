@@ -51,3 +51,18 @@
 
 ### ⚡️ The Team: 
 
+| Members  | Contact |
+| ----------- | ----------- |
+|  Mamadou Diallo | [![Github](https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/Github.svg)](https://github.com/madalp) |
+|  Nicole Curry | [![Github](https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/Github.svg)](https://github.com/kelly1na) |
+|  JeMaris Warren | [![Github](https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/Github.svg)](https://github.com/jemarisw) |
+|  Jennifer Smith | [![Github](https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/Github.svg)](https://github.com/JenniferSmith007) |
+
+
+
+
+
+
+
+
+
