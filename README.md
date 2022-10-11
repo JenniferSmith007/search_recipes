@@ -21,6 +21,7 @@
 
 | Tech   | Usage |
 | ----------- | ----------- |
+|  API  | https://www.edamam.com/ |
 |  Figma  | Wireframing designs |
 |  Vite     | Local development and production site building      |
 |  Prettier / ESLint   |  Ensure code consistency and catch potential errors      |
