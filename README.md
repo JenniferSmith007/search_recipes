@@ -12,7 +12,7 @@
 #### TECHNOLOGY 
 
 - [ ] Must be a web app
-- [x] Should make use of at least one API
+- [ ] Should make use of at least one API
 - [ ] Should store, retrieve, and change data locally
 
 
@@ -31,12 +31,23 @@
 ### ✒️  Documentation: 
 #### Design Thinking / Value proposition / User Persona
 <div align="center"> 
-  <img src="https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/designthink.png" width="550" alt="Design thinking">
+  <img src="https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/designthink.png" width="450" alt="Design thinking">
 
 
- <img src="https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/valueprop.png" width="550" alt="Vaue prop">
+ <img src="https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/valueprop.png" width="450" alt="Vaue prop">
 
   
- <img src="https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/userpersona.png" width="550" alt="user persona">
+ <img src="https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/userpersona.png" width="450" alt="user persona">
 </div>
+
+###  📐 Wireframe:
+<div align="center"> 
+  <img src="https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/capstoneexample.svg" width="450" alt="recipe wireframe">
+  <img src="https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/capstoneexample.svg" width="450" alt="recipe wireframe">
+</div>
+
+### 🖥 Built Web Application: 
+🔨 Coming soon. 🧰 
+
+### ⚡️ The Team: 
 
