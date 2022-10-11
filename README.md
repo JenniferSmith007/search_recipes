@@ -29,6 +29,14 @@
 |  Github / Github Pages  | Store code and host a “production” version of the application |
 
 ### ✒️  Documentation: 
-#### Design Thinking and Value proposition 
+#### Design Thinking / Value proposition / User Persona
+<div align="center"> 
+  <img src="https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/designthink.png" width="550" alt="Design thinking">
 
+
+ <img src="https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/valueprop.png" width="550" alt="Vaue prop">
+
+  
+ <img src="https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/userpersona.png" width="550" alt="user persona">
+</div>
 
