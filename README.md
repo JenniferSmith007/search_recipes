@@ -14,6 +14,17 @@
 - [ ] Must be a web app
 - [x] Should make use of at least one API
 - [ ] Should store, retrieve, and change data locally
-- [ ] Must use GitHub to store code and host a “production” version of their app using GitHub Pages
 
+
+### 🛠 Building the Application 
+
+
+| Tech   | Usage |
+| ----------- | ----------- |
+|  Figma  | Wireframing designs |
+|  Vite     | Local development and production site building      |
+|  Prettier / ESLint   |  Ensure code consistency and catch potential errors      |
+|  HTML / CSS / JavaScript   | Code base     |
+|  Git  |  Version control      |
+|  Github / Github Pages  | Store code and host a “production” version of the application |
 
