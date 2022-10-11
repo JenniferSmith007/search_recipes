@@ -11,4 +11,9 @@
 
 #### TECHNOLOGY 
 
+- [ ] Must be a web app
+- [x] Should make use of at least one API
+- [ ] Should store, retrieve, and change data locally
+- [ ] Must use GitHub to store code and host a “production” version of their app using GitHub Pages
+
 
