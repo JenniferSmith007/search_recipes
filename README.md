@@ -47,8 +47,7 @@
   <img src="https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/capstoneexample.svg" width="450" alt="recipe wireframe">
 </div>
 
-### 🖥 Built Web Application: 
-🔨 Coming soon. 🧰 
+
 
 ### ⚡️ The Team: 
 
