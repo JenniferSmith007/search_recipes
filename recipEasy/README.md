@@ -1,6 +1,6 @@
-#  🍲 Recipe Application 🥘
+#  🍲 Recip-Easy 🥘
 ### 🔎 Overview: 
-[Recipe Application], is a web based application that allows the user to search for ingredients to create quick custom recipes that also adhere to budget options. 
+Recip-Easy, is a web based application that allows the user to search for ingredients to create quick custom recipes that also adhere to budget options. 
 
 ### ✔️ Task:
 
@@ -12,7 +12,7 @@
 #### TECHNOLOGY 
 
 - [ ] Must be a web app
-- [x] Should make use of at least one API
+- [ ] Should make use of at least one API
 - [ ] Should store, retrieve, and change data locally
 
 
@@ -21,6 +21,7 @@
 
 | Tech   | Usage |
 | ----------- | ----------- |
+|  API  | https://www.edamam.com/ |
 |  Figma  | Wireframing designs |
 |  Vite     | Local development and production site building      |
 |  Prettier / ESLint   |  Ensure code consistency and catch potential errors      |
@@ -29,6 +30,39 @@
 |  Github / Github Pages  | Store code and host a “production” version of the application |
 
 ### ✒️  Documentation: 
-#### Design Thinking and Value proposition 
+#### Design Thinking / Value proposition / User Persona
+<div align="center"> 
+  <img src="https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/designthink.png" width="450" alt="Design thinking">
+
+
+ <img src="https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/valueprop.png" width="450" alt="Vaue prop">
+
+  
+ <img src="https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/userpersona.png" width="450" alt="user persona">
+</div>
+
+###  📐 Wireframe:
+<div align="center"> 
+  <img src="https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/capstoneexample.svg" width="450" alt="recipe wireframe">
+  <img src="https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/capstoneexample.svg" width="450" alt="recipe wireframe">
+</div>
+
+
+
+### ⚡️ The Team: 
+
+| Members  | Contact |
+| ----------- | ----------- |
+|  Mamadou Diallo | [![Github](https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/Github.svg)](https://github.com/madalp) |
+|  Nicole Curry | [![Github](https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/Github.svg)](https://github.com/kelly1na) |
+|  JeMaris Warren | [![Github](https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/Github.svg)](https://github.com/jemarisw) |
+|  Jennifer Smith | [![Github](https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/Github.svg)](https://github.com/JenniferSmith007) |
+
+
+
+
+
+
+
 
 
