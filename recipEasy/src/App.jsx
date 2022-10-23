@@ -1,13 +1,17 @@
-import ApiCall from './components/api'
-import './App.css'
+
+import { MainScreen } from './components/mainScreen'
+
 
 function App() {
 
 
+
   return (
     <div className="App">
-      <h1> hello</h1>
-      <ApiCall/>
+   
+      <MainScreen/>
+     
+
     </div>
   )
 }
