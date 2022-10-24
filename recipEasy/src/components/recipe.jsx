@@ -1,15 +1,17 @@
 const ApiCall = async () => {
-  let apikey = "584a968330c9a233c596f56784cf5806";
-  let apiid = "7ba2100d";
+  // let apikey = "584a968330c9a233c596f56784cf5806";
+  // let apiid = "7ba2100d";
   let userValue = document.getElementById("user_input").value;
   console.log("this is query", userValue);
   let ev = document.getElementById("diets_label");
   let evres = ev.options[ev.selectedIndex].value;
   console.log("this is dietValue", evres);
-  // let apiid = import.meta.env.APIID
+  let apiid = import.meta.env.VITE_APIID
+  let apikey = import.meta.env.VITE_APIKEY
   const res = await fetch(
     `https://api.edamam.com/api/recipes/v2?q=${userValue}&app_key=${apikey}&_cont=CHcVQBtNNQphDmgVQntAEX4BYldtBAQARGJGB2EWa1BxBAYGUXlSB2IQZAQiVwYPRjFGBDFGMlFwVlFTF2RHBzEbMFAhDVcVLnlSVSBMPkd5AAMbUSYRVTdgMgksRlpSAAcRXTVGcV84SU4%3D&diet=${evres}&health=kosher&type=public&app_id=${apiid}`
   );
+  console.log('this is url', res)
   const data = await res.json();
   console.log(data.hits);
   const hits = data.hits;
