@@ -1,5 +1,6 @@
 {
   "name": "recipeasy",
+  "homepage": "http://JenniferSmith007.github.io/Search_Recipes",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
