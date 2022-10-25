@@ -1,5 +1,5 @@
 
-import { MainScreen } from './components/mainScreen'
+import { MainScreen } from './mainScreen'
 
 
 function App() {
