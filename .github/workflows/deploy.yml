@@ -1,35 +1,20 @@
-name: Release
+name: publish
 
 on: [push]
 
-jobs:
-  release:
-    runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Prepare repository
-        run: git fetch --unshallow --tags
-
-      - name: Use Node.js 16.x
-        uses: actions/setup-node@v1
-        with:
-          node-version: 16.x
-
-      - name: Cache node modules
-        uses: actions/cache@v1
-        with:
-          path: node_modules
-          key: yarn-deps-${{ hashFiles('yarn.lock') }}
-          restore-keys: |
-            yarn-deps-${{ hashFiles('yarn.lock') }}
-
-      - name: Create Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          yarn install --frozen-lockfile
-          yarn build
-          npx auto shipit
+steps:
+- uses: actions/checkout@v3
+- uses: actions/setup-node@v3
+  with:
+    node-version: '14.x'
+    registry-url: <registry url>
+- run: yarn install --frozen-lockfile
+- run: yarn publish
+  env:
+    NODE_AUTH_TOKEN: ${{ secrets.YARN_TOKEN }}
+- uses: actions/setup-node@v3
+  with:
+    registry-url: 'https://npm.pkg.github.com'
+- run: yarn publish
+  env:
+    NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
