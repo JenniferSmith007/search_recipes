@@ -3,7 +3,7 @@
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@master
+        uses: actions/checkout@main
         with:
           persist-credentials: false
-          submodules: true  # TODO remove this if not using submodules in Hexo
+         
 
       - name: Install 🔧
         run: yarn install
