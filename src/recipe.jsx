@@ -1,6 +1,5 @@
 const ApiCall = async () => {
-  // let apikey = "584a968330c9a233c596f56784cf5806";
-  // let apiid = "7ba2100d";
+  
   let userValue = document.getElementById("user_input").value;
   console.log("this is query", userValue);
   let ev = document.getElementById("diets_label");

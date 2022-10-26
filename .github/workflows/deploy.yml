@@ -9,7 +9,10 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-
+    env:
+      VITE_INTERNAL: true
+      VITE_APIID: ${{ secrets.VITE_APIID }}
+      VITE_APIKEY: ${{ secrets.VITE_APIKEY }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
@@ -48,6 +51,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          VITE_APIID: ${{ secrets.VITE_APIID }}
-          VITE_APIKEY: ${{ secrets.VITE_APIKEY }}
           publish_dir: ./dist
