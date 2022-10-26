@@ -80,3 +80,22 @@ export default ApiCall;
 
 
 // 
+
+
+const recipes = ({label, cuisintype})=> {
+  return (
+    <div>
+      <h1>{label}</h1>
+    </div>
+  )
+}
+
+
+
+
+// seperate components from data manipulation 
+//  file for data 
+// file components
+
+// recipeitems -> displays the recipe 
+// recipe (list of recipe items components) map over the recipe data for each recipe render recipe item component 
