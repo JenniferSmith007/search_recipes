@@ -1,6 +1,6 @@
  name: GH Pages deploy
 
-  on:
+on:
     push:
       branches: main
       paths-ignore:
