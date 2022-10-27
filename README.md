@@ -22,11 +22,11 @@ Recip-Easy, is a web based application that allows the user to search for ingred
 
 | Tech   | Usage |
 | ----------- | ----------- |
-|  API  | https://www.edamam.com/ |
+|  API  | [edamam](https://www.edamam.com/) & [kroger](https://developer.kroger.com/reference/) |
 |  Figma  | Wireframing designs |
 |  Vite     | Local development and production site building      |
 |  Prettier / ESLint   |  Ensure code consistency and catch potential errors      |
-|  HTML / CSS / JavaScript   | Code base     |
+|  React.js  | Code base     |
 |  Git  |  Version control      |
 |  Github / Github Pages  | Store code and host a “production” version of the application |
 
