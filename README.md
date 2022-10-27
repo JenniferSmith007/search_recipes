@@ -7,12 +7,12 @@ Recip-Easy, is a web based application that allows the user to search for ingred
 #### PROJECT
 - [x] The problem you’re looking to solve with your app
 - [x] At least one user persona/customer profile describing a type of user
-- [ ] A value map showing what you offer in your app
+- [x] A value map showing what you offer in your app
 
 #### TECHNOLOGY 
 
-- [ ] Must be a web app
-- [ ] Should make use of at least one API
+- [x] Must be a web app
+- [x] Should make use of at least one API
 - [ ] Should store, retrieve, and change data locally
 
 
@@ -47,7 +47,8 @@ Recip-Easy, is a web based application that allows the user to search for ingred
   <img src="https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/capstoneexample.svg" width="450" alt="recipe wireframe">
 </div>
 
-
+### 🚀 Live Site: 
+https://jennifersmith007.github.io/Search_Recipes/
 
 ### ⚡️ The Team: 
 
