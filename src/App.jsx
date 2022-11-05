@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home } from './components/Home'
-import { Favorites } from './components/Favorites'
-import { Comments } from './components/Comments'
+import { Home } from './components/pages/Home'
+import { Favorites } from './components/pages/Favorites'
+import { Comments } from './components/pages/Comments'
+import style from "./style/style";
 function App() {
 
 
