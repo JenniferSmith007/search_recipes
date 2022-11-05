@@ -1,7 +1,7 @@
-
-import { MainScreen } from './mainScreen'
-
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Home } from './components/Home'
+import { Favorites } from './components/Favorites'
+import { Comments } from './components/Comments'
 function App() {
 
 
@@ -9,10 +9,16 @@ function App() {
   return (
     <div className="App">
    
-      <MainScreen/>
-     
+   <Router>
+  <Routes>
+    <Route path="/" element={<Home/>} />
+    <Route path="/favoriterecipes" element={<Favorites />} />
+    <Route path="/comments" element={<Comments />} />
+  </Routes>
+</Router>
 
-    </div>
+
+  </div>
   )
 }
 
