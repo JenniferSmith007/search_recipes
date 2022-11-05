@@ -1,6 +1,9 @@
 // import tan from '../assets/recipeImages/tan.jpeg'
 import { Comment } from "./features/comment"
 export const FakeRecipe = () => {
+
+    let recipeCard = document.createElement("div")
+    recipeCard.id = 'recipe_card'
     let title = document.createElement("h1") 
     title.innerText = "Tandoori Chicken"
     let img = document.createElement("img")
@@ -12,12 +15,12 @@ export const FakeRecipe = () => {
     commentButton.innerText = "Comment"
     let favoriteButton = document.createElement("button")
     favoriteButton.innerText = "Favorite"
-    document.body.appendChild(title)
-    document.body.appendChild(img)
-    document.body.appendChild(directions)
-    document.body.appendChild(commentButton)
-    document.body.appendChild(favoriteButton)
-
+   document.body.appendChild(recipeCard)
+    recipeCard.appendChild(img)
+    recipeCard.appendChild(directions)
+    recipeCard.appendChild(commentButton)
+    recipeCard.appendChild(favoriteButton)
+    
   commentButton.addEventListener("click", (e) => {
     Comment()
   })
@@ -29,3 +32,8 @@ export const FakeRecipe = () => {
 }
 
 
+// display: grid;
+// grid-template-columns: repeat(3, 1fr);
+// grid-template-rows: repeat(3, 1fr);
+// grid-column-gap: 6px;
+// grid-row-gap: 3px;
