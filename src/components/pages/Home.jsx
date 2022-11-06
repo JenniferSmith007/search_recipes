@@ -1,6 +1,6 @@
 import { Navbar } from "../Navbar";
-
-import { Search } from "../features/Search";
+import {RecipesList} from '../RecipesList'
+// import { Search } from "../features/Search";
 export const Home = () => {
   let logo = 'Recip-Easy'
   
@@ -10,8 +10,8 @@ export const Home = () => {
     <div className="home_page">
       <Navbar />
     <h1>{logo}</h1>
-    <Search />
-   
+    {/* <Search /> */}
+   <RecipesList />
    
     </div>
   );
