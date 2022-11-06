@@ -1,29 +1,24 @@
-// import { Recipes } from "./Recipes"
-
+// import { useContext, useState } from "react"
+// import { RecipeContext } from "../../RecipeContext";
 // export const Search = () => {
+//   const [searchRecipe, setSearchRecipe] = useState('');
+// const [recipe, setRecipe] = useContext(RecipeContext)
   
-//     const handleClick = () => {
-        
-//         Recipes()
-//     }
+// const searchRecipes = (e) => {
+  
+//     setSearchRecipe(e.target.value)
     
-//     return (
-//         <div>
-          
-//         <input placeholder="Search Recipe" />
-//         <label htmlFor="diets">Diet:</label>
-//         <select className="diets">
-//           <option value="balanced">balanced</option>
-//           <option value="high-protien">high-protien</option>
-//         </select>
-//         <label htmlFor="allergy">Allergy:</label>
-//         <select className="allergy">
-//           <option value="shellfish">ShellFish</option>
-//           <option value="tree-nuts">Tree-nuts</option>
-//         </select>
-//             <button onClick={handleClick}>Click Here</button>
-           
-           
-//         </div>
-//     )
+//   }
+//   const searchedRecipes = (e) => {
+//     e.preventDefault()
+//     setRecipe(prevRecipe => [...prevRecipe, {searchRecipe:searchRecipe}])
+//   }
+//   return (
+//     <div>
+//       <form>
+//         <input placeholder="Search Recipe" value={searchRecipe} onChange={searchRecipes}></input>
+//         <button onClick={searchedRecipes}>Click Here</button>
+//       </form>
+//     </div>
+//   )
 // }

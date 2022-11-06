@@ -1,5 +1,5 @@
-import { useState,createContext } from "react"
-
+import { useState,createContext,useEffect } from "react"
+import axios from "axios"
 
 export const RecipeContext = createContext()
 
@@ -7,31 +7,36 @@ export const RecipeContext = createContext()
 
 
 
-export const RecipeInformationProvider = (props) => {
-    const [recipe,setRecipe] = useState(
-    [
-    {
-          title: 'Tandoori Chicken',
-          // image: img,
-          instruction: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor dignissim convallis aenean et tortor at risus viverra. Auctor eu augue ut lectus arcu bibendum at varius vel. Justo eget magna fermentum iaculis eu. Tellus orci ac auctor augue mauris augue neque gravida.',
+export const RecipeInformationProvider = ({children}) => {
+    const [recipe,setRecipe] = useState()
+    useEffect(() => {
+      let apiid = import.meta.env.VITE_APIID
+      let apikey = import.meta.env.VITE_APIKEY
+      
+      const fetchData = async () => {
+          const resp = await axios.get(`https://api.edamam.com/api/recipes/v2?q=chicken&app_key=${apikey}&_cont=CHcVQBtNNQphDmgVQntAEX4BYldtBAQARGJGB2EWa1BxBAYGUXlSB2IQZAQiVwYPRjFGBDFGMlFwVlFTF2RHBzEbMFAhDVcVLnlSVSBMPkd5AAMbUSYRVTdgMgksRlpSAAcRXTVGcV84SU4%3D&diet=balanced&health=kosher&type=public&app_id=${apiid} `)
+          setRecipe(resp.data.hits.map(recipes => 
+          <div>
+              <h1>{recipes.recipe.label}</h1>
+              <p>{recipes.recipe.cuisineType[0]}</p>
+              <img src={recipes.recipe.image} />
+              <p>{recipes.recipe.mealType}</p>
+              <p>{recipes.recipe.ingredientLines}</p>
+             
+          </div>
+          ))
+          
+          console.log(resp.data.hits)
+       
          
-        },
-        {
-          title: 'Eggs',
-          // image: img,
-          instruction: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor dignissim convallis aenean et tortor at risus viverra. Auctor eu augue ut lectus arcu bibendum at varius vel. Justo eget magna fermentum iaculis eu. Tellus orci ac auctor augue mauris augue neque gravida.',
-         
-        },
-        {
-          title: 'salad',
-          // image: img,
-          instruction: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor dignissim convallis aenean et tortor at risus viverra. Auctor eu augue ut lectus arcu bibendum at varius vel. Justo eget magna fermentum iaculis eu. Tellus orci ac auctor augue mauris augue neque gravida.',
-         
-        }])
+      }
+      fetchData()
+    }, [])
+    
   return (
     <div>
-        <RecipeContext.Provider value={[recipe,setRecipe]}>
-            {props.children}
+        <RecipeContext.Provider value={{recipe,setRecipe}}>
+            {children}
         </RecipeContext.Provider>
     </div>
   )  

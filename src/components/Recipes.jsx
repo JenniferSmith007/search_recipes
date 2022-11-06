@@ -1,10 +1,9 @@
-export const Recipes = ({title, instruction}) => {
+
+export const Recipes = ({recipe}) => {
+    
     return(
         <div>
-            <h1>{title}</h1>
-            
-            <p>{instruction}</p>
-            
+          {recipe}
             </div>
     )
 }

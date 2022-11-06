@@ -1,24 +1,22 @@
-import { useState,useContext } from "react"
-import { Recipes } from "./Recipes"
-import { RecipeContext } from "../RecipeContext"
-export const RecipesList = () => {
-  const [recipe, setRecipe] = useContext(RecipeContext)
-  
-  
+// import { useState,useContext } from "react"
+// import { Recipes } from "./Recipes"
+// import { RecipeContext } from "../RecipeContext"
 
+// export const RecipesList = async() => {
+//   const [recipe, setRecipe] = useContext(RecipeContext)
+  
+  
+  
+// return (
+//   <div>
+    
+//     {recipe.map(recipes => (
    
-  
-  
-return (
-  <div>
+//     <Recipes label={recipes.label}  image={recipes.image} ingredients={recipes.ingredients}  /> ))}
     
-    {recipe.map(recipes => (
-    
-    <Recipes title={recipes.title}  instruction={recipes.instruction}  /> ))}
-    
-  </div>
-)
-}
+//   </div>
+// )
+// }
 
 
 
