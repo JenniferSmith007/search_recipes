@@ -1,7 +1,7 @@
 #  🍲 Recip-Easy 🥘
 ### 🔎 Overview: 
 Recip-Easy, is a web based application that allows the user to search for ingredients to create quick custom recipes that also adhere to budget options.
-<br> Live Site: [Recip-Easy](https://jennifersmith007.github.io/Search_Recipes/) 🚀  
+<br> Live Site: [Recip-Easy](https://jennifersmith007.github.io/search_recipes/) 🚀  
 
 ### ✔️ Task:
 
@@ -33,19 +33,19 @@ Recip-Easy, is a web based application that allows the user to search for ingred
 ### ✒️  Documentation: 
 #### Design Thinking / Value proposition / User Persona
 <div align="center"> 
-  <img src="https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/designthink.png" width="450" alt="Design thinking">
+  <img src="https://github.com/JenniferSmith007/search_recipes/blob/main/images/designthink.png" width="450" alt="Design thinking">
 
 
- <img src="https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/valueprop.png" width="450" alt="Vaue prop">
+ <img src="https://github.com/JenniferSmith007/search_recipes/blob/main/images/valueprop.png" width="450" alt="Vaue prop">
 
   
- <img src="https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/userpersona.png" width="450" alt="user persona">
+ <img src="https://github.com/JenniferSmith007/search_recipes/blob/main/images/userpersona.png" width="450" alt="user persona">
 </div>
 
 ###  📐 Wireframe:
 <div align="center"> 
-  <img src="https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/capstoneexample.svg" width="450" alt="recipe wireframe">
-  <img src="https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/capstoneexample.svg" width="450" alt="recipe wireframe">
+  <img src="https://github.com/JenniferSmith007/search_recipes/blob/main/images/capstoneexample.svg" width="450" alt="recipe wireframe">
+  <img src="https://github.com/JenniferSmith007/search_recipes/blob/main/images/capstoneexample.svg" width="450" alt="recipe wireframe">
 </div>
 
 
@@ -54,10 +54,10 @@ Recip-Easy, is a web based application that allows the user to search for ingred
 
 | Members  | Contact |
 | ----------- | ----------- |
-|  Mamadou Diallo | [![Github](https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/Github.svg)](https://github.com/madalp) |
-|  Nicole Curry | [![Github](https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/Github.svg)](https://github.com/kelly1na) |
-|  JeMaris Warren | [![Github](https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/Github.svg)](https://github.com/jemarisw) |
-|  Jennifer Smith | [![Github](https://github.com/JenniferSmith007/Search_Recipes/blob/main/images/Github.svg)](https://github.com/JenniferSmith007) |
+|  Mamadou Diallo | [![Github](https://github.com/JenniferSmith007/search_recipes/blob/main/images/Github.svg)](https://github.com/madalp) |
+|  Nicole Curry | [![Github](https://github.com/JenniferSmith007/search_recipes/blob/main/images/Github.svg)](https://github.com/kelly1na) |
+|  JeMaris Warren | [![Github](https://github.com/JenniferSmith007/search_recipes/blob/main/images/Github.svg)](https://github.com/jemarisw) |
+|  Jennifer Smith | [![Github](https://github.com/JenniferSmith007/search_recipes/blob/main/images/Github.svg)](https://github.com/JenniferSmith007) |
 
 
 

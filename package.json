@@ -24,7 +24,7 @@
     "vite": "^3.1.0"
   },
   "main": "index.js",
-  "repository": "https://github.com/JenniferSmith007/Search_Recipes.git",
+  "repository": "https://github.com/JenniferSmith007/search_recipes.git",
   "author": "Jenn Smith <smith.jennifer.rchs@gmail.com>",
   "license": "MIT"
 }
