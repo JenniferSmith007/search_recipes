@@ -1,15 +1,15 @@
 import { Navbar } from "../Navbar";
 import { RecipeList } from "../RecipeList";
 import { useAPI } from "../RecipeContext";
-import { useEffect } from "react";
-import { useState } from "react";
-import { Recipe } from "../Recipe";
+import { useEffect, useState } from "react";
+
+
 
 export const Home = () => {
   let logo = "Recip-Easy";
   const [ingredients, setIngredients] = useState("");
-  const { data, fetchData } = useAPI();
-  console.log(`this is data ${JSON.stringify(data)}`);
+  const {  fetchData } = useAPI();
+  
   useEffect(() => {
     // fetchData("banana,blueberry,oat");
   }, []);
@@ -32,13 +32,7 @@ export const Home = () => {
         Click here
       </button>
 
-      {data?.map((r, index) => {
-        return (
-          
-            <Recipe recipe={r} key={index} />
-         
-        );
-      })}
+   
       <RecipeList />
     </div>
   );
