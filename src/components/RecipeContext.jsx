@@ -1,6 +1,6 @@
-import { useState, createContext, useEffect,useContext } from "react";
+import { useState, createContext,useContext } from "react";
 import axios from "axios";
-import { Recipes } from "./Recipe";
+
 export const RecipeContext = createContext();
 
 export const RecipeInformationProvider = ({ children }) => {
