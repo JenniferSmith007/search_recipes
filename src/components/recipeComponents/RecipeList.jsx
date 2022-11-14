@@ -6,7 +6,7 @@ import { useAPI, RecipeContext as context } from "./RecipeContext";
    const {data} = useAPI();
   
   return (
-    <div>
+    <div className="recipe_holder">
       {context.status === "init" ? (
         <p>Loading</p>
       ) : (

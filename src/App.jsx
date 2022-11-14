@@ -4,6 +4,8 @@ import { Favorites } from "./components/pages/Favorites";
 import { Comments } from "./components/pages/Comments";
 
 import { RecipeInformationProvider } from "./components/recipeComponents/RecipeContext";
+import "./index.css";
+
 function App() {
   return (
     <div className="App">

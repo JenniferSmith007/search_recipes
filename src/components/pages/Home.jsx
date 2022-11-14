@@ -4,14 +4,18 @@ import { Ingredients } from "../recipeComponents/IngredientsList";
 
 
 export const Home = () => {
-  let logo = "Recip-Easy";
+  let logo = "Recipeeasy";
   return(
-    <>
-  <h1>{logo}</h1>
-  <Navbar />
-  <Ingredients />
+    <div>
   
-    </>
+  <div className="nav"><Navbar /></div>
+  <h1 className="main_title">{logo}</h1>
+  
+    <Ingredients />
+    
+  
+  
+    </div>
   )
 
  
