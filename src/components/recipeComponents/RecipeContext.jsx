@@ -13,7 +13,7 @@ export const RecipeInformationProvider = ({ children }) => {
  const fetchData = async (query,diet, allergie) => {
     
     const {data} = await axios.get(
-      `https://api.edamam.com/api/recipes/v2?q=${query}&app_key=${apikey}&_cont=CHcVQBtNNQphDmgVQntAEX4BYldtBAQARGJGB2EWa1BxBAYGUXlSB2IQZAQiVwYPRjFGBDFGMlFwVlFTF2RHBzEbMFAhDVcVLnlSVSBMPkd5AAMbUSYRVTdgMgksRlpSAAcRXTVGcV84SU4%3D&diet=${diet}&health=${allergie}&type=public&app_id=${apiid} `
+      `https://api.edamam.com/api/recipes/v2?q=${query}&app_key=${apikey}&_cont=CHcVQBtNNQphDmgVQntAEX4BYldtBAQARGJGB2EWa1BxBAYGUXlSB2IQZAQiVwYPRjFGBDFGMlFwVlFTF2RHBzEbMFAhDVcVLnlSVSBMPkd5AAMbUSYRVTdgMgksRlpSAAcRXTVGcV84SU4%3D&diet=${diet|| 'balanced'}&health=${allergie || 'kosher'}&type=public&app_id=${apiid} `
     )
     setData(data?.hits || [])
     // optional chaning => if val exist get it other if data doesnt exist return empty array 
