@@ -3,7 +3,7 @@ import { Home } from "./components/pages/Home";
 import { Favorites } from "./components/pages/Favorites";
 import { Comments } from "./components/pages/Comments";
 
-import { RecipeInformationProvider } from "./components/RecipeContext";
+import { RecipeInformationProvider } from "./components/recipeComponents/RecipeContext";
 function App() {
   return (
     <div className="App">

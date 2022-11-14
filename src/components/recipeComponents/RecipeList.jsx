@@ -1,9 +1,9 @@
 import { Recipe } from "./Recipe";
 import { useAPI, RecipeContext as context } from "./RecipeContext";
 // named import using the variable in the file 
-export const RecipeList = () => {
+ export const RecipeList = () => {
   
-  const { data} = useAPI();
+   const {data} = useAPI();
   
   return (
     <div>
@@ -17,3 +17,4 @@ export const RecipeList = () => {
     </div>
   );
 };
+
