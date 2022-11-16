@@ -1,6 +1,5 @@
 import { RecipeList } from "./RecipeList";
 import { useAPI } from "./RecipeContext";
-
 import { useState } from "react";
 
 export const Ingredients = () => {
