@@ -1,3 +1,14 @@
+*{
+    --background-color: #EFFAFB;
+    --heading-color: #F2CD75;
+    --font-color: #000000
+    --header-size: 
+}
+body{
+background-color: var(--background-color);
+color: var(--font-color);
+}
+
 .nav {
    background-color: yellow;
    width: 25vw;
@@ -12,6 +23,7 @@ color: rgb(15, 16, 16);
 }
 .title{
     color: blueviolet;
+    text-align: center;
 }
 
 .main_title{
@@ -76,6 +88,7 @@ img{
 width: 22vw;
 margin: auto;
 }
+
 .para{
     align-self: center;
     margin: 1em ;
