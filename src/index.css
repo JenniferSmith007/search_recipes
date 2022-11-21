@@ -1,14 +1,40 @@
+*{
+    --background-color: #EFFAFB;
+    --heading-color: #F2CD75;
+    --font-color: #000000
+  
+}
+body{
+background-color: var(--background-color);
+color: var(--font-color);
+font-family: 'Montserrat', sans-serif;
+}
+
+
+
 .nav {
-   background-color: yellow;
-   width: 25vw;
+   background-image: url('src/assets/recipeImages/nav.svg') ;
+   width: 100vw;
    margin: auto;
    display: flex;
    flex-direction: row;
    justify-content: space-around;
+   align-items: baseline;
    flex-wrap: wrap;
+   text-decoration: none;
+   
 }
 .nav a{
-color: rgb(15, 16, 16);
+color: var(--heading-color);
+font-weight: 900;
+font-size: 1.7em;
+}
+.slogan{
+    color: rgb(122, 122, 122);
+    font-weight: 700;
+}
+a:link, a:visited, a:active, a:hover{
+    text-decoration: none;
 }
 .title{
     color: blueviolet;
