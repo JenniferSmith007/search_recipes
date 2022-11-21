@@ -18,7 +18,7 @@ font-family: 'Montserrat', sans-serif;
    margin: auto;
    display: flex;
    flex-direction: row;
-   justify-content: space-around;
+   /* justify-content: space-around; */
    align-items: baseline;
    flex-wrap: wrap;
    text-decoration: none;
