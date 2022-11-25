@@ -1,3 +1,16 @@
+*{
+    --background-color: #EFFAFB;
+    --heading-color: #F2CD75;
+    --font-color: #000000
+  
+}
+body{
+background-color: var(--background-color);
+color: var(--font-color);
+font-family: 'Montserrat', sans-serif;
+}
+
+
 
 .nav {
    background-image: url('src/assets/recipeImages/nav.svg') ;
@@ -25,7 +38,6 @@ a:link, a:visited, a:active, a:hover{
 }
 .title{
     color: blueviolet;
-    text-align: center;
 }
 
 .main_title{
@@ -90,9 +102,8 @@ img{
 width: 22vw;
 margin: auto;
 }
-
 .para{
     align-self: center;
     margin: 1em ;
    
-} */
+}
