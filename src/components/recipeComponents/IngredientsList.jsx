@@ -1,35 +1,13 @@
 import { RecipeList } from "./RecipeList";
 import { useAPI } from "./RecipeContext";
+
 import { useState } from "react";
-import{database} from '../recipeComponents/recipeDatabase'
 
 export const Ingredients = () => {
   const [ingredients, setIngredients] = useState("");
   const [diets, setDiets] = useState("");
   const [allergies, setAllergies] = useState("");
-  const { fetchData, data } = useAPI();
-
-  const storefav = async (favObj) => {
-    const db = database;
-    
-
-    await db.put("FavRecipeToStore", favObj);
-    fetchData(ingredients, diets, allergies);
-
-  };
-  const removefav = async (favObj) => {
-    const db = database;
-    await db.clear("FavRecipeToStore", favObj);
-    fetchData(ingredients, diets, allergies);
-
-  };
-  const storeComment = async (commentObj) => {
-    const db = database;
-    await db.put("RecipeComments", commentObj);
-   
-  };
-
-
+  const { fetchData } = useAPI();
   return (
     <div className="ingredients_list">
       <div className="search">
@@ -88,8 +66,7 @@ export const Ingredients = () => {
       </button>
 
       <div className="recipes">
-        <RecipeList data={data} storefav={storefav} removefav={removefav} storeComment={storeComment} />
-       
+        <RecipeList />
       </div>
     </div>
   );
