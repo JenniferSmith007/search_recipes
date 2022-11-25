@@ -33,7 +33,7 @@ export const Ingredients = () => {
   return (
     <div className="ingredients_list">
       <div className="search">
-        <input
+        <input className="input"
           placeholder="Search Recipe"
           onChange={(e) => {
             setIngredients(e.target.value);
@@ -43,13 +43,14 @@ export const Ingredients = () => {
       <div className="select">
         <label htmlFor="diets" placeholder="diets"></label>
         <select
+        className="sel"
           name="diets"
           id="diets"
           onChange={(e) => {
             if (e) setDiets(e.target.value);
           }}
         >
-          <option>choose Diet</option>
+          <option className="opt">Diet</option>
           <option value="balanced">Balanced</option>
           <option value="high-fiber">High-Fiber</option>
           <option value="high-protein">High-Protien</option>
@@ -61,14 +62,14 @@ export const Ingredients = () => {
           <option value="vegetarian">Vegetarian</option>
         </select>
         <label htmlFor="allergies" placeholder="allergies"></label>
-        <select
+        <select className="sel"
           name="allergies"
           id="allergies"
           onChange={(e) => {
             if (e) setAllergies(e.target.value);
           }}
         >
-          <option>choose Allergy</option>
+          <option className="opt">Allergy</option>
           <option value="dairy-free">Dairy-free</option>
           <option value="egg-free">Egg-Free</option>
           <option value="soy-free">Soy-Free</option>
@@ -79,12 +80,12 @@ export const Ingredients = () => {
           <option value="fish-free">Fish-free</option>
         </select>
       </div>
-      <button 
+      <button className="main-btn"
         onClick={() => {
           fetchData(ingredients, diets, allergies);
         }}
       >
-        Click here
+        
       </button>
 
       <div className="recipes">

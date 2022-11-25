@@ -33,12 +33,12 @@ export const Recipe = ({ recipe, removefav, storefav}) => {
   return recipe ? (
     <div className="recipe-card">
       <h1 className="title">{recipe?.label}</h1>
-      <p>{recipe?.cuisineType?.[0]}</p>
+      <p>{recipe?.cuisineType}</p>
       <img src={recipe?.image} />
       <p>{recipe?.mealType}</p>
       <p className="para">{recipe?.ingredientLines}</p>
       {isFav ? (
-        <button
+        <button className="rem-btn"
           onClick={async () => {
             removefav(recipe?.uri);
           }}
@@ -46,7 +46,7 @@ export const Recipe = ({ recipe, removefav, storefav}) => {
           Remove
         </button>
       ) : (
-        <button
+        <button className="fav-btn"
           onClick={async () => {
             const favObj = {
               label: recipe?.label,
@@ -66,7 +66,7 @@ export const Recipe = ({ recipe, removefav, storefav}) => {
       )}
       <form>
         <textarea value={comment} onChange={getComment} />
-        <button
+        <button className="com-btn"
           onClick={ async(e) => {
             e.preventDefault();
             const commentObj = {

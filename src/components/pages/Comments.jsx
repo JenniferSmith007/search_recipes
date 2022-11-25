@@ -36,13 +36,16 @@ export const Comments = () => {
           
            {comments.map((test, index) => {
             return (
-                <div>
+                <div className="com-rec">
+                <div className="holder">
                 <h1 key={index}> {test.recipe.label}</h1>
                 <p > {test.recipe.cuisineType}</p>
                 <img src={test.recipe.image} />
                 <p> {test.recipe.mealType}</p>
+                <div className="com-hol">
                 <p>{test.recipe.input.comment}</p>
-             
+                </div>
+             </div>
                 </div>
             )
            })}

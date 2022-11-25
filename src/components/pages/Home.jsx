@@ -1,16 +1,15 @@
 import { Navbar } from "../Navbar";
 import { Ingredients } from "../recipeComponents/IngredientsList";
-
+import logo from '../logo.svg'
 
 
 export const Home = () => {
-  let logo = "Recipeeasy";
+  
   return(
-    <div>
+    <div className="home-pg">
   
   <div className="nav"><Navbar /></div>
-  <h1 className="main_title">{logo}</h1>
-  
+ <img className="logo" src={logo} />
     <Ingredients />
     
   
