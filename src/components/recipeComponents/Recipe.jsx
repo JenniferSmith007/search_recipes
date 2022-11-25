@@ -1,27 +1,17 @@
 import { useEffect, useState } from "react";
 import { database } from "./recipeDatabase";
 
-export const Recipe = ({ recipe }) => {
+export const Recipe = ({ recipe, removefav, storefav}) => {
   const [isFav, setIsFav] = useState(false);
-  const storefav = async (favObj) => {
-    const db = database;
-    console.log("this is db", db);
-    //   database.then(async (db) => {
-    //     this.db = db
-    //  const favorite = await db.get("FavRecipeToStore", "favorite")
-    // if(favorite){
-    //   for(const[key,value] of Objects.entries(favorite))
-    //   this.set[key,value]
-    // }
-    // })
-    await db.put("FavRecipeToStore", favObj);
+  const [comment, setComment] = useState("");
+  
+  const getComment = async (e) => {
+    e.preventDefault();
+    setComment(e.target.value);
+  
   };
 
-  if (self.db) {
-    console.log(self.db);
-  }
-
-  useEffect(() => {
+ useEffect(() => {
     const isFavorite = async () => {
       const db = database;
 
@@ -35,10 +25,11 @@ export const Recipe = ({ recipe }) => {
     // console.log('this is result', result)
     // setIsFav(result);
     isFavorite();
+
+
+
   }, [recipe]);
-  const removefav = () => {
-    
-  }
+
   return recipe ? (
     <div className="recipe-card">
       <h1 className="title">{recipe?.label}</h1>
@@ -47,14 +38,16 @@ export const Recipe = ({ recipe }) => {
       <p>{recipe?.mealType}</p>
       <p className="para">{recipe?.ingredientLines}</p>
       {isFav ? (
-        <button    onClick={async () => {
-         
-          removefav(recipe?.uri);
-        }}>Remove</button>
+        <button
+          onClick={async () => {
+            removefav(recipe?.uri);
+          }}
+        >
+          Remove
+        </button>
       ) : (
         <button
           onClick={async () => {
-            console.log("clicked");
             const favObj = {
               label: recipe?.label,
               cuisineType: recipe?.cuisineType?.[0],
@@ -66,13 +59,32 @@ export const Recipe = ({ recipe }) => {
             console.log("this is favobj,", favObj);
             //  (await database).add("favorites", favObj)
             storefav(favObj);
-            
           }}
         >
           Favorite
         </button>
       )}
-      <button>Comment</button>
+      <form>
+        <textarea value={comment} onChange={getComment} />
+        <button
+          onClick={ async(e) => {
+            e.preventDefault();
+            const commentObj = {
+              label: recipe?.label,
+              cuisineType: recipe?.cuisineType?.[0],
+              image: recipe?.image,
+              mealType: recipe?.mealType,
+              input: { comment },
+            };
+            console.log(commentObj);
+            setComment(commentObj);
+            const db = database
+            await db.put("RecipeComments", commentObj)
+          }}
+        >
+          Comment
+        </button>
+      </form>
     </div>
   ) : (
     <></>

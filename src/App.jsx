@@ -13,7 +13,7 @@ function App() {
         <Router>
           <Routes>
             <Route path="/*" exact element={<Home />} />
-            <Route path="/favorites/" element={<Favorites />} />
+            <Route path="/favorites" element={<Favorites />} />
             <Route path="/comments" element={<Comments />} />
             <Route path="/random-recipe" element={<RandomRecipe />} />
           </Routes>
