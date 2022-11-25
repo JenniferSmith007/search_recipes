@@ -14,7 +14,7 @@ Recip-Easy, is a web based application that allows the user to search for ingred
 
 - [x] Must be a web app
 - [x] Should make use of at least one API
-- [ ] Should store, retrieve, and change data locally
+- [x] Should store, retrieve, and change data locally
 
 
 ### 🛠 Building the Application 
@@ -22,7 +22,7 @@ Recip-Easy, is a web based application that allows the user to search for ingred
 
 | Tech   | Usage |
 | ----------- | ----------- |
-|  API  | [edamam](https://www.edamam.com/) & [kroger](https://developer.kroger.com/reference/) |
+|  API  | [edamam](https://www.edamam.com/) |
 |  Figma  | Wireframing designs |
 |  Vite     | Local development and production site building      |
 |  Prettier / ESLint   |  Ensure code consistency and catch potential errors      |
