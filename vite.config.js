@@ -5,6 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig(
 {
   plugins: [react()],
-  base:'/search_recipes/'
+  // base:'/search_recipes/'
 })
 
