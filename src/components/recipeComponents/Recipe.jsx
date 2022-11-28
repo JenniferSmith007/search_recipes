@@ -13,7 +13,7 @@ export const Recipe = ({ recipe, removefav, storefav}) => {
 
  useEffect(() => {
     const isFavorite = async () => {
-      const db = database;
+      const db = await database();
 
       setIsFav(
         (await db.get("FavRecipeToStore", recipe?.uri)) !== undefined
@@ -77,8 +77,8 @@ export const Recipe = ({ recipe, removefav, storefav}) => {
               input: { comment },
             };
             console.log(commentObj);
-            setComment(commentObj);
-            const db = database
+           
+            const db = await database()
             await db.put("RecipeComments", commentObj)
           }}
         >

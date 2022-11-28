@@ -6,7 +6,7 @@ import { database } from "../recipeComponents/recipeDatabase";
 export const Favorites = () => {
   const [faved, setFaved] = useState([]);
   const removefav = async (favObj) => {
-    const db = database;
+    const db = await database();
     await db.clear("FavRecipeToStore", favObj);
     getFavorite()
   };
@@ -16,7 +16,7 @@ export const Favorites = () => {
     getFavorite();
   }, []);
   const getFavorite = async () => {
-    const db = database;
+    const db = await database();
     const response = await db.getAll("FavRecipeToStore");
     
     setFaved(

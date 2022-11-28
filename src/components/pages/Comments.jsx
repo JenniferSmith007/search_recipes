@@ -14,7 +14,7 @@ export const Comments = () => {
     
     
     const getComments = async () => {
-        const db = database
+        const db = await database()
         const response = await db.getAll("RecipeComments")
         
         setComments(response.map((res) => {

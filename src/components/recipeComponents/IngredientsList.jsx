@@ -10,7 +10,7 @@ export const Ingredients = () => {
   const { fetchData, data } = useAPI();
 
   const storefav = async (favObj) => {
-    const db = database;
+    const db = await database();
     
 
     await db.put("FavRecipeToStore", favObj);
@@ -18,13 +18,13 @@ export const Ingredients = () => {
 
   };
   const removefav = async (favObj) => {
-    const db = database;
+    const db = await database();
     await db.clear("FavRecipeToStore", favObj);
     fetchData(ingredients, diets, allergies);
 
   };
   const storeComment = async (commentObj) => {
-    const db = database;
+    const db = await database();
     await db.put("RecipeComments", commentObj);
    
   };
