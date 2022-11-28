@@ -27,6 +27,9 @@ jobs:
 
       - name: Build project
         run: yarn run build
+        
+      - name: add files 
+        run: cd dist && echo > .nojekyll && echo 'recipeeasy.xyz' > CNAME
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
