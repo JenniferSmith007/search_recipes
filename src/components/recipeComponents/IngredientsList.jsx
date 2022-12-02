@@ -85,9 +85,9 @@ export const Ingredients = () => {
           fetchData(ingredients, diets, allergies);
         }}
       >
-        
+        Search 
       </button>
-
+        
       <div className="recipes">
         <RecipeList data={data} storefav={storefav} removefav={removefav} storeComment={storeComment} />
        

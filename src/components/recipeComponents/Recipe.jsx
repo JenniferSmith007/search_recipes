@@ -85,6 +85,7 @@ export const Recipe = ({ recipe, removefav, storefav}) => {
           Comment
         </button>
       </form>
+      <div>{comment}</div>
     </div>
   ) : (
     <></>

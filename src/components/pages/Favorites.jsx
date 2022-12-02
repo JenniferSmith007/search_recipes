@@ -30,7 +30,7 @@ export const Favorites = () => {
   return (
     <div>
       <Navbar />
-      <h1>Favorites</h1>
+      <h1 className="fav-header">Favorites</h1>
       <div className="recipes">
         <RecipeList data={faved}  removefav={removefav}/>
       </div>

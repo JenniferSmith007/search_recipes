@@ -32,7 +32,7 @@ export const Comments = () => {
         <div>
       <Navbar/>
        
-            <h1>Comments</h1>
+            <h1 className="com-header">Comments</h1>
           
            {comments.map((test, index) => {
             return (

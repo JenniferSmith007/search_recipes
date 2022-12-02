@@ -29,6 +29,22 @@ font-size: 1.7em;
 a:link, a:visited, a:active, a:hover{
     text-decoration: none;
 }
+
+
+a:active{
+    color: #fdbd2a ;
+  transform: translateY(4px);
+}
+
+a:visited{
+    color: #fdbd2a;
+}
+
+
+
+
+
+
 .title{
     color: #F2CD75;
     text-align: center;
@@ -50,12 +66,20 @@ grid-column-gap: 3px;
 grid-row-gap: 4px;
         
 }
+ .com-rec{
+display: flex;
+flex-direction: column;
+
+
+
+}
 .search, button{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
    
 }  
+
 
 input {
     width: 28vw;
@@ -78,10 +102,12 @@ button{
  margin: auto;
  margin-top: 1em;
  margin-bottom: 1em;
+
+ 
   
 }
 
-.recipe-card{
+.recipe-card {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -138,21 +164,15 @@ margin: auto;
     margin-bottom: 2em;
 }
 .main-btn{
-    width: 6vw;
-    height: 4vh;
     
-   background-image: url('./components/srchbtn.svg');
-   
-   background-position: center;
-   background-repeat: no-repeat;
-   background-color: transparent;border: none; outline: none;
-   float: right;
-   margin-top: -9em;
-   margin-right: 43em;
-   z-index: 10;
+    
+  width: 9em;
+ 
+  
+  
 }
 
-.fav-btn, .com-btn, .rem-btn{
+.fav-btn, .com-btn, .rem-btn, .main-btn{
 padding: 1rem;
 border-radius: .5em;
 
@@ -161,24 +181,39 @@ outline: none;
 border: none;
 text-decoration: none;
 
+
+}
+.fav-btn, .com-btn, .rem-btn, .main-btn:active{
+transform: translateY(4px); 
+background-color: #fdbd2a ;
 }
 
+.com-header, .fav-header {
+    color: #F2CD75;
+    text-align: center;
+    font-weight: 900;
+}
+h1{
+    color: #F2CD75;   
+}
 textarea{
     border-color: #F2CD75;
     width: 16vw;
     height: 10vh;
 }
 
-.com-rec{
-    display: grid;
-    grid-template-columns: repeat(2, .5fr);
-    grid-template-rows: repeat(2, .5fr);
-    grid-column-gap: .3em;
-    grid-row-gap: .3em;
-}
+@media only screen and (max-width: 768px) {
+    .recipe_holder {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 2px;
+        grid-row-gap: 3px;
+    }
+ 
+        
+       
+       
+    
+  }
 
-.com-hol{
-   
-    border-color: blue;
-    color: aquamarine;
-}
