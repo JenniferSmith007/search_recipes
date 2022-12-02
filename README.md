@@ -1,6 +1,6 @@
 #  🍲 Recip-Easy 🥘
 ### 🔎 Overview: 
-Recip-Easy, is a web based application that allows the user to search for ingredients to create quick custom recipes that also adhere to budget options.
+Recip-Easy, is a web based application that allows the user to search for ingredients to create quick custom recipes.
 <br> Live Site: [Recip-Easy](https://jennifersmith007.github.io/search_recipes/) 🚀  
 
 ### ✔️ Task:
