@@ -183,9 +183,10 @@ text-decoration: none;
 
 
 }
-.fav-btn, .com-btn, .rem-btn, .main-btn:active{
+.fav-btn:active, .com-btn:active, .rem-btn:active, .main-btn:active{
+    background-color: #fdbd2a ;
 transform: translateY(4px); 
-background-color: #fdbd2a ;
+
 }
 
 .com-header, .fav-header {
